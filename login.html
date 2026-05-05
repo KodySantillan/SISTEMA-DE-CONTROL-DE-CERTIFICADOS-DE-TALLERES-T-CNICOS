@@ -1,7 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
- 
+ <script>
+// ════════════════════════════════════════════════════
+//  CONFIGURACIÓN REAL DE SUPABASE
+// ════════════════════════════════════════════════════
+const SUPABASE_URL  = 'https://vsqhmtahidbeqvfecdkm.supabase.co';
+
+const SUPABASE_ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJz dXBhYmFzZSIsInJlZiI6InZzcWhtdGFoaWRiZXF2ZmVjZGttIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzgwMTYwNTMsImV4cCI6MjA5MzU5MjA1M30.Qk52BDKSKBPsR_7vVfyYxlVazDYVWXfYhLDDELPcUDw';
+// ════════════════════════════════════════════════════
+
+const { createClient } = supabase;
+const db = createClient(SUPABASE_URL, SUPABASE_ANON);
+</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>SCCTT – Iniciar Sesión | UPLA EPISC</title>
